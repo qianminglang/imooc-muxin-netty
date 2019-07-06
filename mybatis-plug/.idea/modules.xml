@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/im-netty-mybatis.iml" filepath="$PROJECT_DIR$/im-netty-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-plug.iml" filepath="$PROJECT_DIR$/mybatis-plug.iml" />
     </modules>
   </component>
 </project>
