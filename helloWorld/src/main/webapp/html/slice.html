@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>slice</title>
+</head>
+<body>
+<script>
+    function test(a, b, c, d) {
+        var arg = Array.prototype.slice.call(arguments, 1);
+        alert(arg);
+    }
+
+    test("a", "b", "c", "d"); //b,c,d
+</script>
+</body>
+</html>

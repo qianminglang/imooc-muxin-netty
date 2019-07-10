@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>click和onclick</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+</head>
+<body>
+<button id="test_btn" onclick="textOnclick()" value="按钮">按钮</button>
+<script>
+
+    $('#test_btn').click(function () {
+        alert("click执行");
+    })
+
+    function textOnclick() {
+        alert("onclick执行");
+    }
+
+
+    (function () {
+        console.log("js自执行函数")
+    })()
+
+    $(function () {
+        console.log("jq自执行函数")
+    })
+
+</script>
+
+
+</body>
+</html>

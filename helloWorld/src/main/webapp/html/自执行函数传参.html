@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自执行函数传参</title>
+</head>
+<body>
+<script>
+
+
+    // 一、JS立即执行函数的写法
+    // 方式1、最前最后加括号
+
+    (function () {
+        alert(1);
+    }());
+
+    // 方式2、function外面加括号
+    (function () {
+        alert(2);
+    })();
+
+    // 方式3、function前面加运算符，常见的是!与void
+    !function () {
+        alert(3);
+    }();
+    void function () {
+        alert(4);
+    }();
+
+    // 可以给立即执行函数传递参数，例如
+    (function (who, when) {
+        console.log("I met " + who + " on " + when);
+    }("Joe Black", new Date()));
+
+    (function (w) {
+        var $ = w.$ ? w.$ : {};
+        $.Dialog = {};
+        w.$ = $;
+    })(window || {})
+
+</script>
+</body>
+</html>

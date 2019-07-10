@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM事件流</title>
+</head>
+<body>
+<button id="btn">按钮</button>
+<script>
+    var btn = document.getElementById("btn");
+
+    //事件目标
+    // btn.onclick = function () {
+    //     console.log("onclick");
+    // }
+    btn.click(function () {
+        console.log("click");
+    })
+
+
+</script>
+</body>
+</html>

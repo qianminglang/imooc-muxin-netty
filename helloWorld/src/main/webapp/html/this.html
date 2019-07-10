@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this</title>
+</head>
+<body>
+<script>
+    function Person(name, age) {
+        this.name = name;
+        this.age = age
+    }
+
+    var person = new Person("xu", 18);
+    var obj = {}
+    Person.call(obj, "liu", 20)
+</script>
+</body>
+</html>
